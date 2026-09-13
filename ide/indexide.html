@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarXCoder IDE</title>
+  <link rel="stylesheet" href="style3.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="ide-shell">
+    <header class="ide-header">
+      <div>
+        <p class="eyebrow">StarXCoder</p>
+        <h1>Web IDE</h1>
+      </div>
+      <div class="actions">
+        <button id="run-button" type="button">Run</button>
+        <button id="clear-button" type="button">Clear</button>
+      </div>
+    </header>
+
+    <section class="workspace">
+      <div class="editor-panel">
+        <div class="tabs" role="tablist" aria-label="Editor files">
+          <button class="tab active" type="button" data-editor="html">HTML</button>
+          <button class="tab" type="button" data-editor="css">CSS</button>
+          <button class="tab" type="button" data-editor="js">JavaScript</button>
+        </div>
+
+        <label class="editor-label" for="code-editor">Code editor</label>
+        <textarea id="code-editor" spellcheck="false"></textarea>
+      </div>
+
+      <div class="result-panel">
+        <div class="preview-header">
+          <h2>Preview</h2>
+        </div>
+        <iframe id="preview" title="Code preview" sandbox="allow-scripts"></iframe>
+
+        <div class="console">
+          <div class="preview-header">
+            <h2>Console</h2>
+          </div>
+          <pre id="output"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
