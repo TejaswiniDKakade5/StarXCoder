@@ -1,0 +1,1197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.css">
+    <title>Python Tutorial</title>
+  </head>
+  <body>
+
+  <!-- **************************************** Navbar ***************************************************** -->
+
+    <h1 style="text-align: center; color:wheat; background-color: rgb(31, 11, 62); padding: 3px;">Python Tutorial </h1>
+    <div class="py" style="margin-left: 20px; margin-right: 20px;">
+
+ <!-- *********************************** python History ************************************************* -->
+ <br>
+    <h2>What is Python ?</h2>
+    
+  <p>     Python is a widely-used general-purpose, high-level programming language. It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation.<br> It was mainly developed for emphasis on code readability, and its syntax allows programmers to express concepts in fewer lines of code.
+<br><br>
+    It is used for:
+    </p> 
+    <ul>
+        <li>web development (server-side),</li>
+        <li>software development,</li>
+        <li>mathematics,</li>
+     <li>system scripting.</li>
+    </ul>
+   
+<br>
+<h2> What can Python do?</h2>
+<ul>
+   <li>Python can be used on a server to create web applications.</li>
+   <li>Python can be used alongside software to create workflows.</li>
+   <li>Python can connect to database systems. It can also read and modify files.</li>
+   <li>Python can be used to handle big data and perform complex mathematics.</li>
+   <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+</ul>
+<br>
+
+<h2>Why Python?</h2>
+<ul>
+    <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+    <li>Python has a simple syntax similar to the English language.</li>
+    <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+    <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+    <li>Python can be treated in a procedural way, an object-oriented way or a functional way.    </li>
+</ul>
+<br>
+<h2>Python Install</h2>
+
+<p>Many PCs and Macs will have python already installed.
+<br>
+To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):
+<br>
+<b>C:\Users\Your Name>python --version</b></p>
+
+<br>
+<p> <b> Basic syntax from the python programming language</b> </p>
+    <h3 style="color: rgb(144, 12, 177);">Showing Output To User</h3>
+    <p>The print function is used to display or print output as follows</p>
+    <div class="alert alert-primary" role="alert">
+        print("Content that you wanna print on the screen")
+        <br>
+        for eg.   print("hello world!")
+      </div>
+      <p>we can display the content present in object using prit function as follows:-</p>
+      <div class="alert alert-primary" role="alert">
+        var1 = "Nilam"<br>
+        print("Hi my name is: ",var1)
+       
+      </div>
+      <br>
+
+      <!-- ***************************** Taking input from user ************************************************ -->
+
+      <h3 style="color: rgb(144, 12, 177);">Taking Input From the User</h3>
+      <p>The input function is used to take input as string or character from the user as follows:</p>
+      <div class="alert alert-primary" role="alert">
+        var1 = input("Enter your name: ")<br>
+        print("My name is: ", var1)
+      </div>
+      <p>To take input in form of other datatypes we need to typecaste them as follows:-
+        <br>
+        To take input as an integer:-</p>
+        <div class="alert alert-primary" role="alert">
+            var1=int(input("enter the integer value"))<br>
+            print(var1)
+          </div>
+
+          <p>To take input as an float:-</p>
+          <div class="alert alert-primary" role="alert">
+            var1=float(input("enter the float value"))<br>
+            print(var1)
+        </div>
+        <br>
+        <!-- ************************************* comments ********************************************************** -->
+      <h3 style="color:rgb(144, 12, 177) ;">Comments</h3>  
+     <p>  Comments are used to make the code more understandable for programmers, and they are not executed by compiler or interpreter.</p>
+
+        <h4>Single line comment</h4>
+        <div class="alert alert-primary" role="alert">
+           #this is single line comment
+        </div>
+
+        <h4>Multi-line comment</h4>
+        <div class="alert alert-primary" role="alert">
+           '''this is<br> multiline comment'''
+        </div>
+        <br>
+        <!-- ************************************  Escape sequences   **************************************************** -->
+
+        <h3 style="color:rgb(144, 12, 177) ;">  Escape Sequence</h3>
+
+        <p>An escape sequence is a sequence of characters; it doesn't represent itself (but is translated into another character) when used inside string literal or character. Some of the escape sequence characters are as follows:
+        </p>
+        
+       <h6>Newline </h6> 
+       Newline Character
+        <div class="alert alert-primary" role="alert">
+            print("\n")
+        </div>
+
+      <h6>Backslash</h6>  
+        It adds a backslash
+        <div class="alert alert-primary" role="alert">
+            print("\\")
+        </div>
+
+        <h6>Single Quote</h6> 
+            It adds a single quotation mark
+        <div class="alert alert-primary" role="alert">
+            print("\'")
+        </div>
+
+        <h6>Tab</h6>
+            It gives a tab space
+        <div class="alert alert-primary" role="alert">
+            print("\t")
+        </div>
+
+        <h6>Backspace</h6>
+            It adds a backspace
+        <div class="alert alert-primary" role="alert">
+            print("\b")
+        </div>
+
+        <h6>Octal value</h6>
+        It represents the value of an octal number
+        <div class="alert alert-primary" role="alert">
+            print("\ooo")
+        </div>
+
+        <h6>Hex value</h6>
+        It represents the value of a hex number
+        <div class="alert alert-primary" role="alert">
+            print("\xhh")
+        </div>
+
+        <h6>Carriage Return</h6>
+        Carriage return or \r will just work as you have shifted your cursor to the beginning of the string or line.
+        <div class="alert alert-primary" role="alert">
+            pint("\r")
+        </div>
+        <br>
+        <!-- ************************************* Datatypes & operators *************************************** -->
+
+
+        <h3 style="color:rgb(144, 12, 177) ;">Data Types and Operators</h3>
+        <p>Welcome to this lesson on Data Types and Operators! You'll learn about:</p>
+        <ul>
+            <li>Data Types: Integers, Floats, Booleans, Strings, Lists, Tuples, Sets, Dictionaries</li>
+            <li>Operators: Arithmetic, Assignment, Comparison, Logical, Membership, Identity</li>
+            <li>Built-In Functions, Compound Data Structures, Type Conversion</li>
+            <li>Whitespace and Style Guidelines</li>
+        </ul>
+        <br>
+
+        <!-- ************************************ variables ****************************************************** -->
+
+        <h3 style="color:rgb(144, 12, 177) ;">  Variables</h3>
+
+        A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+
+        <br>
+
+        <h5>*Rules for Python variables:-</h5>
+
+        <p>A variable name must start with a letter or the underscore character
+            <br>
+            A variable name cannot start with a number <br>
+            
+            A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+            <br>
+            Variable names are case-sensitive (age, Age and AGE are three different variables.</p>
+
+            <br>
+        <!-- **************************************** python casting ****************************************** -->
+        <h3 style="color:rgb(144, 12, 177) ;">Python Casting</h3>Python Casting
+
+       <p>Casting in python is done using constructor functions:
+        <br>
+        int() - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number).
+        <br>
+        float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)
+        <br>
+        str()- constructs a string from a wide variety of data types, including strings, integer literals and float literals
+        </p> 
+
+        <div class="alert alert-primary" role="alert">
+            x = int(1)  <br>
+            y = int(2.5) <br>
+            z = int("3") <br>
+            
+            print(x) <br>
+            print(y) <br>
+            print(z)
+        </div>
+            <br>
+
+        <!-- ***************************************** range func *********************************************** -->
+
+        <h3 style="color:rgb(144, 12, 177) ;">Range Function</h3>
+            range function returns a sequence of numbers, eg, numbers starting from 0 to n-1 for range(0, n)
+            <div class="alert alert-primary" role="alert">
+                range(int_start_value,int_stop_value,int_step_value)
+            </div>
+           <p> range() is a built-in function used to create an iterable sequence of numbers. You will frequently use range() with a for loop to repeat an action a certain number of times, as in this example:
+        </p>
+        <div class="alert alert-primary" role="alert">
+            for i in range(3): <br>
+            &nbsp;&nbsp;  print("Hello!")
+        </div>
+            
+           <h5>range(start=0, stop, step=1)</h5> 
+            The range() function takes three integer arguments, the first and third of which are optional:
+            <br>
+            The 'start' argument is the first number of the sequence. If unspecified, 'start' defaults to 0. <br>
+            The 'stop' argument is 1 more than the last number of the sequence. This argument must be specified. <br>
+            The 'step' argument is the difference between each number in the sequence. If unspecified, 'step' defaults to 1. <br><br>
+          <b>Notes on using range(): </b>  <br>
+            If you specify one integer inside the parentheses withrange(), it's used as the value for 'stop,' and the defaults are used for the other two. Example-
+            <div class="alert alert-primary" role="alert">
+                for i in range(4): <br>
+                &nbsp;&nbsp;   print(i)
+            </div>
+            
+            If you specify two integers inside the parentheses withrange(), they're used for 'start' and 'stop,' and the default is used for 'step.' Example-
+            <div class="alert alert-primary" role="alert">
+                for i in range(2, 6): <br>
+                &nbsp;&nbsp;    print(i) 
+            </div>
+            <br>
+
+        <!-- ********************************* strings ********************************************************* -->
+
+        <h3 style="color:rgb(144, 12, 177) ;">Strings</h3>
+        <p>Python string is a sequence of characters, and each character can be individually accessed using its index.
+            <br>
+            Strings in python are surrounded by either single quotation marks, or double quotation marks.
+            <br>
+            'hello' is the same as "hello".
+            <br>
+            You can display a string literal with the print() function
+
+        </p>
+
+        <div class="alert alert-primary" role="alert">
+           print('hello')<br>
+           print("hello")
+        </div>
+
+      <h5>Indexing</h5>  
+      <p> The position of every character placed in the string starts from 0th position ans step by step it ends at length-1 position</p> 
+
+        <h5>Slicing</h5>
+        <p>Slicing refers to obtaining a sub-string from the given string. The following code will include index 1, 2, 3, and 4 for the variable named var_name
+            <br>
+            Slicing of the string can be obtained by the following syntax-
+        </p>  
+        <div class="alert alert-primary" role="alert">
+            string_var[int_start_value:int_stop_value:int_step_value]
+        </div>
+
+         <div class="alert alert-primary" role="alert">
+            var_name[1 : 5]
+        </div>
+        <div class="alert alert-primary" role="alert">
+            #slice from start
+            <br>
+            x = "Hello, World!" <br>
+            print(x[:5])
+        </div>
+
+        <div class="alert alert-primary" role="alert">
+            #slice to end
+            <br>
+            x = "Hello, World!"  <br>
+            print(x[2:])
+            
+        </div>
+
+        
+       <p>here start and step value are considered 0 and 1 respectively if not mentioned by the programmmer</p> 
+
+
+       <h5>isalnum() method</h5>
+        <p>Returns True if all the characters in the string are alphanumeric, else False</p> 
+         <div class="alert alert-primary" role="alert">
+            string_variable.isalnum()
+        </div>
+
+        <h5>isalpha() method</h5>
+        Returns True if all the characters in the string are alphabets
+        <div class="alert alert-primary" role="alert">
+            string_variable.isalpha()
+        </div>
+
+        <h5>isdecimal() method</h5>
+        Returns True if all the characters in the string are decimals
+        <div class="alert alert-primary" role="alert">
+            string_variable.isdecimal()
+        </div>
+
+      <h5> islower() method</h5> 
+        Returns True if all characters in the string are lower case
+        <div class="alert alert-primary" role="alert">
+            string_variable.islower()
+        </div>
+
+       <h5>isspace() method</h5> 
+        Returns True if all characters in the string are whitespaces
+        <div class="alert alert-primary" role="alert">
+           string_variable.isspace()
+        </div>
+
+        <h5>isupper() method</h5> 
+        Returns True if all characters in the string are upper case
+            <div class="alert alert-primary" role="alert">
+               string_variable.isupper()
+                </div>
+
+     <h5>lower() method</h5>
+        Converts a string into lower case equivalent
+        <div class="alert alert-primary" role="alert">
+            string_variable.lower()
+        </div>
+
+       <h5> upper() method</h5>
+        Converts a string into upper case equivalent
+        <div class="alert alert-primary" role="alert">
+            string_variable.upper()
+        </div>
+        
+        <h5>strip() method</h5>
+            It removes leading and trailing spaces in the string
+        <div class="alert alert-primary" role="alert">
+            string_variable.strip()
+        </div>
+
+<br>
+<!-- ************************************************ List ********************************************* -->
+
+        <h3 style="color:rgb(144, 12, 177) ;">List</h3>
+        <p>Lists are used to store multiple items in a single variable.
+            <br>
+            Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+            <br>
+            A List in Python represents a list of comma-separated values of any data type between square brackets.
+            </p>
+        
+        <div class="alert alert-primary" role="alert">
+               var_name = [element1, element2, ...]
+        </div>
+
+    These elements can be of different datatypes
+
+    <h5>Indexing</h5>
+    The position of every elements placed in the string starts from 0th position ans step by step it ends at length-1 position
+    <br>
+    List is ordered,indexed,mutable and most flexible and dynamic collection of elements in python.
+    <br><br>
+
+    <h5>Empty List</h5>
+    This method allows you to create an empty list
+    <div class="alert alert-primary" role="alert">
+    my_list = []  
+        </div>
+
+    <h5>index method</h5>
+        Returns the index of the first element with the specified value
+    <div class="alert alert-primary" role="alert">
+        list.index(element)
+    </div>
+
+            <h5>append method</h5>
+        append method Adds an element at the end of the list
+        <div class="alert alert-primary" role="alert">
+          list.append(element)
+        </div>
+
+        <h5>extend method</h5>
+        Add the elements of a given list (or any iterable) to the end of the current list
+        <div class="alert alert-primary" role="alert">
+            list.extend(iterable)
+        </div>
+
+       <h5>insert method</h5> 
+        Adds an element at the specified position
+        <div class="alert alert-primary" role="alert">
+            list.insert(position, element)
+        </div>
+        
+       <h5>pop method</h5> 
+        Removes the element at the specified position and returns it
+        <div class="alert alert-primary" role="alert">
+            list.pop(position)
+        </div>
+        
+        <h5>remove method</h5>
+        The remove() method removes the first occurrence of a given item from the list
+        <div class="alert alert-primary" role="alert">
+            list.remove(element)
+        </div>
+        
+        <h5>clear method</h5>
+        Removes all the elements from the list
+        <div class="alert alert-primary" role="alert">
+            list.clear()
+        </div>
+        
+        <h5>count method</h5>
+        This method Returns the number of elements with the specified value
+        <div class="alert alert-primary" role="alert">
+            list.count(value)
+        </div>
+        
+        <h5>reverse method</h5>
+        Reverse method is used to Reverses the order of the list
+        <div class="alert alert-primary" role="alert">
+            list.reverse()
+        </div>
+        
+        <h5>sort method</h5>
+        Sort method is used to Sorts the list
+        <div class="alert alert-primary" role="alert">
+            list.sort(reverse=True|False)
+        </div>
+
+        <!-- ***************************************** Tuples *********************************************** -->
+
+        <h3 style="color:rgb(144, 12, 177) ;">Tuple</h3>
+
+        <p>Tuples are used to store multiple items in a single variable.
+            <br>
+            Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+            <br>
+            A tuple is a collection which is ordered and unchangeable.
+            <br>
+            Tuples are written with round brackets.</p>
+
+           <h5>Tuple Creation</h5> 
+           <div class="alert alert-primary" role="alert">
+            variable_name = (element1, element2, ...)
+        </div>  
+            These elements can be of different datatypes
+            
+           <h5>Indexing</h5> 
+            The position of every elements placed in the string starts from 0th position ans step by step it ends at length-1 position
+            <br>
+            Tuples are ordered,indexing,immutable and most secured collection of elements
+            <br>
+           <b> Lets talk about some of the tuple methods:</b>
+            
+           <h5> count method</h5>
+            It returns the number of times a specified value occurs in a tuple
+            <div class="alert alert-primary" role="alert">
+                tuple.count(value)
+            </div>
+            
+            <h5>index method</h5>
+            It searches the tuple for a specified value and returns the position.
+            <div class="alert alert-primary" role="alert">
+                tuple.index(value)
+            </div>
+            <br>
+            
+            <!-- ******************************************* sets **************************************************** -->
+       
+            <h3 style="color:rgb(144, 12, 177) ;">Sets</h3>
+            
+          <p>Sets are used to store multiple items in a single variable.
+            <br>
+            Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.
+            <br>
+            A set is a collection which is unordered, unchangeable*, and unindexed.</p>  
+            <div class="alert alert-danger" role="alert">
+                * Note: Set items are unchangeable, but you can remove items and add new items.
+
+            </div>
+            
+            Sets are written with curly brackets.
+            Set Creation: Way 1
+            <div class="alert alert-primary" role="alert">
+                var_name = {element1, element2, ...}
+            </div>
+            
+            Set Creation: Way 2
+            <div class="alert alert-primary" role="alert">
+                var_name = set([element1, element2, ...])
+            </div>
+            
+            Set is unordered,immutable,non-indexed type of collection.Duplicate elements are not allowed in sets.
+            <br><br>
+            <h5>Set Methods</h5>
+            Lets talk about some of the methods of sets:
+            <br><br>
+            <h5>add() method</h5>
+            Adds an element to a set
+            <div class="alert alert-primary" role="alert">
+                set.add(element)
+            </div>
+            
+            <h5>clear() method</h5>
+            Remove all elements from a set
+            <div class="alert alert-primary" role="alert">
+                set.clear()
+            </div>
+            
+           <h5> discard() method</h5>
+            Removes the specified item from the set
+            <div class="alert alert-primary" role="alert">
+                set.discard(value)
+            </div>
+            
+            <h5>intersection() method</h5>
+             It Returns intersection of two or more sets
+            <div class="alert alert-primary" role="alert">
+                set.intersection(set1, set2 ... etc)
+            </div>
+           
+           <h5>issubset() method</h5> 
+            Checks if a set is a subset of another set
+            <div class="alert alert-primary" role="alert">
+                set.issubset(set)
+            </div>
+            
+            <h5>pop() method</h5>
+            Removes an element from the set
+            <div class="alert alert-primary" role="alert">
+                set.pop()
+            </div>
+            
+            <h5>remove() method</h5>
+            Removes the specified element from the set
+            <div class="alert alert-primary" role="alert">
+                set.remove(item)
+            </div>
+            
+           <h5>union() method</h5> 
+            Returns the union of two or more sets
+            <div class="alert alert-primary" role="alert">
+                set.union(set1, set2...)
+            </div>
+            
+
+
+            <!-- *************************************** Dictionary ***************************************************** -->
+
+            <h3 style="color:rgb(144, 12, 177) ;">Dictionaries</h3>
+            <p>The dictionary is an unordered set of comma-separated key:value pairs, within {}, with the requirement that within a dictionary, no two keys can be the same.</p> 
+            
+            <h5>Dictionary</h5>
+             Dictionary is ordered and mutable collection of elements.Dictionary allows duplicate values but not duplicate keys.
+            <div class="alert alert-primary" role="alert">
+                <dictionary-name> = {<key>: value, <key>: value ...}
+            </div>
+
+
+           <h5> Empty Dictionary</h5>
+            By putting two curly braces, you can create a blank dictionary
+            <div class="alert alert-primary" role="alert">
+                mydict={}
+            </div>
+           
+            <h5>Adding Element to a dictionary</h5>
+            By this method, one can add new elements to the dictionary
+            <div class="alert alert-primary" role="alert">
+                <dictionary>[<key>] = <value>
+            </div>
+            
+            <h5>Updating Element in a dictionary</h5>
+            If a specified key already exists, then its value will get updated
+            <div class="alert alert-primary" role="alert">
+                <dictionary>[<key>] = <value>
+            </div>
+            
+            <h5>Deleting an element from a dictionary</h5>
+            del keyword is used to delete a specified key:value pair from the dictionary as follows:
+            <div class="alert alert-primary" role="alert">
+                del <dictionary>[<key>]
+            </div>
+            
+            <h4 style="color: blue;">Dictionary Functions & Methods</h4>
+            <b> Below are some of the methods of dictionaries</b>
+            
+            <h5>len() method</h5>
+            It returns the length of the dictionary, i.e., the count of elements (key: value pairs) in the dictionary
+            <div class="alert alert-primary" role="alert">
+                len(dictionary)
+            </div>
+            
+            <h5>clear() method</h5>
+            Removes all the elements from the dictionary
+            <div class="alert alert-primary" role="alert">
+                dictionary.clear()
+            </div>
+           
+            <h5>get() method</h5>
+            Returns the value of the specified key
+            <div class="alert alert-primary" role="alert">
+                dictionary.get(keyname)
+            </div>
+            
+            <h5>items() method</h5>
+            Returns a list containing a tuple for each key-value pair
+            <div class="alert alert-primary" role="alert">
+                dictionary.items()
+            </div>
+            
+            <h5>keys() method</h5>
+            Returns a list containing the dictionary's keys
+            <div class="alert alert-primary" role="alert">
+                dictionary.keys()
+            </div>
+            
+            <h5>values() method</h5>
+            Returns a list of all the values in the dictionary
+            <div class="alert alert-primary" role="alert">
+                dictionary.values()
+            </div>
+            
+          <h5>  update() method</h5>
+            Updates the dictionary with the specified key-value pairs
+            <div class="alert alert-primary" role="alert">
+                dictionary.update(iterable)
+            </div>
+            
+           <h5>Indentation</h5> 
+           <p>
+            In Python, indentation means the code is written with some spaces or tabs into many different blocks of code to indent it so that the interpreter can easily execute the Python code.
+            <br>
+            Indentation is applied on conditional statements and loop control statements. Indent specifies the block of code that is to be executed depending on the conditions.
+           </p> 
+           <br>
+           <!-- ******************************* conditional statement **************************************** -->
+           <h3 style="color:rgb(144, 12, 177) ;">Conditional Statements</h3>
+          <p>The if, elif and else statements are the conditional statements in Python, and these implement selection constructs (decision constructs).</p> 
+           
+           <h5>if Statement</h5>
+           <div class="alert alert-primary" role="alert">
+            if(conditional expression): <br>
+            &nbsp;&nbsp;    statements
+           </div>
+           
+           <h5>if-else Statement</h5>
+           <div class="alert alert-primary" role="alert">
+            if(conditional expression): <br>
+            &nbsp;&nbsp;        //statements <br>
+            else: <br>
+            &nbsp;&nbsp;      //statements <br>
+           </div>
+           
+           <h5>if-elif Statement</h5>
+           <div class="alert alert-primary" role="alert">
+            if (conditional expression): <br>
+            &nbsp;&nbsp;  // statements <br>
+            elif (conditional expression): <br>
+            &nbsp;&nbsp;  // statements <br>
+            else: <br>
+            &nbsp;&nbsp;  // statements <br>
+           </div>
+           
+
+           <h5>Nested if-else Statement</h5>
+           <div class="alert alert-primary" role="alert">
+            if (conditional expression): <br>
+            &nbsp;&nbsp;   if (conditional expression): <br>
+            &nbsp;&nbsp;   &nbsp;&nbsp;    // statements <br>
+            &nbsp;&nbsp;   else: <br>
+            &nbsp;&nbsp;   &nbsp;&nbsp;   // statements  <br>
+           else: <br>
+           &nbsp;&nbsp;   // statements <br>
+           </div>
+           
+          <h5>example-</h5> 
+           <div class="alert alert-primary" role="alert">
+            a=15 <br>
+            b=20 <br>
+            c=12 <br>
+            if(a>b and a>c): <br>
+            &nbsp;&nbsp;      print(a,"is greater than b and c") <br>
+            elif(b>c and b>a): <br>
+            &nbsp;&nbsp;      print(b," is greater than a and c") <br>
+            else: <br>
+            &nbsp;&nbsp;      print(c,"is greater than a and b") <br>
+            
+           </div>
+            <br>
+            <!-- ********************************* loops ********************************************** -->
+
+            <h3 style="color:rgb(144, 12, 177) ;">Loops</h3>
+            
+
+            <h5>Loops in Python</h5>
+            A loop or iteration statement repeatedly executes a statement, known as the loop body, until the controlling expression is false (0).
+
+            
+            
+            <h4>For Loop</h4>
+            
+          <p>  A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+                <br>
+                This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+                <br>
+                With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+                <h6>syntax-</h6>
+            <div class="alert alert-primary" role="alert">
+                for <<variable>variable> in <<sequence>sequence>: <br>
+                    statements_to_repeat 
+            </div>
+            example-
+
+            <div class="alert alert-primary" role="alert">
+                for i in range(1,101,1): <br>
+                &nbsp;&nbsp;    print(i)
+            </div>
+
+
+            
+            <h4>While Loop</h4>
+            A while loop is a conditional loop that will repeat the instructions within itself as long as a conditional remains true.
+
+            <h6>syntax-</h6>
+            <div class="alert alert-primary" role="alert">
+                while <<logical-expression>logical-expression>: <br>
+                    &nbsp;&nbsp;      loop-body
+            </div>
+           
+            example-
+            <div class="alert alert-primary" role="alert">
+                i=1 <br>
+                while(i<=100): <br>
+                &nbsp;&nbsp;         print(i)  <br>
+                &nbsp;&nbsp;      i=i+1  <br>
+            </div>
+            <div class="alert alert-danger" role="alert">
+            Note: remember to increment i, or else the loop will continue forever.
+           </div>
+
+           <!-- ************************************ Break statement*************************************** -->
+            <h3 style="color:rgb(144, 12, 177) ;">Break Statement</h3>
+            The break statement enables a program to skip over a part of the code. A break statement terminates the very loop it lies within.
+            <div class="alert alert-primary" role="alert">
+                for <<var>var> in <<sequence>sequence>: <br>
+                    &nbsp;&nbsp;   statement1  <br>
+                    &nbsp;&nbsp;    if <<condition>condition>:  <br>
+                        &nbsp;&nbsp;   &nbsp;&nbsp;    break  <br>
+                        &nbsp;&nbsp;   &nbsp;&nbsp;   statement2  <br>
+                statement_after_loop  <br>
+            </div>
+            
+            example-
+            <div class="alert alert-primary" role="alert">
+                for i in range(1,101,1): <br>
+                &nbsp;&nbsp;   print(i ,end=" ")  <br>
+                &nbsp;&nbsp;   if(i==50):  <br>
+                &nbsp;&nbsp;   &nbsp;&nbsp;    break  <br>
+                &nbsp;&nbsp;  else:  <br>
+                &nbsp;&nbsp;   &nbsp;&nbsp;    print("Miss")  <br>
+            print("Thank you")  <br>
+            
+            </div>
+            
+             <!--***************************************Continue statement **************************************** -->
+
+           <h3 style="color:rgb(144, 12, 177) ;">Continue Statement</h3> 
+            The continue statement skips the rest of the loop statements and causes the next iteration to occur.
+
+            <div class="alert alert-primary" role="alert">
+                for <<var>var> in <<sequence>sequence>:  <br>
+                    &nbsp;&nbsp;     statement1 <br>
+                    &nbsp;&nbsp;     if <<condition>condition> :  <br>
+                        &nbsp;&nbsp;   &nbsp;&nbsp;     continue <br>
+                        &nbsp;&nbsp;   statement2 <br>
+                        &nbsp;&nbsp;  statement3 <br>
+                        &nbsp;&nbsp;  statement4 <br>
+            </div>
+            
+            example-
+            <div class="alert alert-primary" role="alert">
+                for i in [2,3,4,6,8,0]: <br>
+                &nbsp;&nbsp;   if (i%2!=0):  <br>
+                &nbsp;&nbsp;   &nbsp;&nbsp;   continue  <br>
+                &nbsp;&nbsp;   &nbsp;&nbsp;  print(i) <br>
+
+            </div>
+            <br>
+            <!-- ****************************************** Functions ******************************************* -->
+
+            <h3 style="color:rgb(144, 12, 177) ;"> Functions</h3>
+           <p> A function is a block of code that performs a specific task. You can pass parameters into a function. It helps us to make our code more organized and manageable.
+                <br>
+            A function is a block of code which only runs when it is called.
+                <br>
+            A function can return data as a result.</p>
+
+
+           <h5> Function Definition</h5>
+            <div class="alert alert-primary" role="alert">
+                def my_function(): <br>
+                &nbsp;&nbsp;    #statements
+            </div>
+            
+            def keyword is used before defining the function. 
+            
+            <h5>Function Call</h5>
+            <div class="alert alert-primary" role="alert">
+            my_function()
+            </div>
+           <p> Whenever we need that block of code in our program simply call that function name whenever neeeded. If parameters are passed during defing the function we have to pass the parameters while calling that function </p>
+            
+            example-
+            <div class="alert alert-primary" role="alert">
+                def add():    &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp; &nbsp;&nbsp;   &nbsp;&nbsp;        #function defination  <br>
+                &nbsp;&nbsp;   a=10 <br>
+                &nbsp;&nbsp;   b=20 <br>
+                &nbsp;&nbsp;  print(a+b)  <br>
+        add()       &nbsp;&nbsp; &nbsp;&nbsp;   &nbsp;&nbsp; &nbsp;&nbsp;   &nbsp;&nbsp;         #function call  <br>
+            </div>
+            
+            <h5>Return statement in Python function</h5>
+            The function return statement return the specified value or data item to the caller. 
+            <div class="alert alert-primary" role="alert">
+                return [value/expression]
+            </div>
+           
+            <h5>Arguments in python function</h5>
+            Arguments are the values passed inside the parenthesis of the function while defining as well as while calling.
+            <div class="alert alert-primary" role="alert">
+                def my_function(arg1,arg2,arg3....argn): <br>
+                &nbsp;&nbsp; #statements <br>
+                 my_function(arg1,arg2,arg3....argn) <br>
+            </div>
+            
+            example-
+            <div class="alert alert-primary" role="alert">
+                def add(a,b): <br>
+                &nbsp;&nbsp;  return a+b <br>
+                x=add(7,8) <br>
+                print(x) <br>
+    
+            </div><br>
+           
+            <!-- ************************************************ Array ****************************************** -->
+
+            <h3 style="color:rgb(144, 12, 177) ;">Array</h3>
+            <h4>What is an Array?</h4>
+            An array is a special variable, which can hold more than one value at a time.
+            <br>
+            If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
+            <br>
+            car1 = "BMW" <br>
+            car2 = "Toyota" <br>
+            car3 = "Swift" <br>
+            However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+            <br>
+            The solution is an array! <br>
+            
+            An array can hold many values under a single name, and you can access the values by referring to an index number.
+            <br>
+            <h5>Access the Elements of an Array <br></h5>
+            You refer to an array element by referring to the index number. <br>
+            
+            <div class="alert alert-primary" role="alert">
+                x = cars[0]
+            </div>
+    
+            <h5>Modify the value of the first array item:</h5>
+            <div class="alert alert-primary" role="alert">
+                cars[0] = "Ford"
+            </div>
+            
+           <h5> The Length of an Array</h5>
+            Use the len() method to return the length of an array (the number of elements in an array).
+            
+            <div class="alert alert-primary" role="alert">
+                x = len(cars)
+
+            </div>
+
+           <h5> Adding Array Elements</h5>
+            You can use the append() method to add an element to an array.
+            <div class="alert alert-primary" role="alert">
+                cars.append("Honda")
+            </div>
+                
+            <h5>Removing Array Elements</h5>
+            You can use the pop() method to remove an element from the array.
+            
+            <br>
+            Delete the second element of the cars array:
+            <div class="alert alert-primary" role="alert">
+                cars.pop(1)
+            </div>
+            
+            You can also use the remove() method to remove an element from the array.
+            <br>
+            Example- <br>
+            Delete the element that has the value "Toyota":
+            <div class="alert alert-primary" role="alert">
+                cars.remove("Toyota")
+            </div>
+            
+            <div class="alert alert-danger" role="alert">
+                Note: The list's remove() method only removes the first occurrence of the specified value.
+            </div>
+            
+            <h5>Array Method & Description</h5>
+            <div class="alert alert-warning" role="alert">
+                append() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Adds an element at the end of the list <br>
+                clear()	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes all the elements from the list <br>
+                copy()	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the list <br>
+                count()	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of elements with the specified value <br>
+                extend()	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add the elements of a list (or any iterable), to the end of the current list <br>
+                index()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Returns the index of the first element with the specified value <br>
+                insert()	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds an element at the specified position <br>
+                pop()	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the element at the specified position <br>
+                remove()	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the first item with the specified value <br>
+                reverse()	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reverses the order of the list <br>
+                sort()	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorts the list <br>
+
+            </div>
+            <div class="alert alert-danger" role="alert">
+                Note: Python does not have built-in support for Arrays, but Python Lists can be used instead.
+            </div>
+                <br>
+            <!-- ******************************************** File Handling ********************************************* -->
+            <h3 style="color:rgb(144, 12, 177) ;">File Handling</h3>
+            File handling refers to reading or writing data from files. Python provides some functions that allow us to manipulate data in the files.
+            <div class="alert alert-warning" role="alert">
+               <h3> modes-</h3>
+            r - to read the content from file <br>
+            w - to write the content into file <br>
+            a - to append the existing content into file <br>
+            r+:  To read and write data into the file. The previous data in the file will be overridden. <br>
+            w+: To write and read data. It will override existing data. <br>
+            a+: To append and read data from the file. It won’t override existing data. <br>
+            </div>
+
+           <h5> open() function</h5>
+           <div class="alert alert-primary" role="alert">
+            var_name = open("file name", " mode")
+           </div>
+            
+            <h5>close() function</h5>
+            <div class="alert alert-primary" role="alert">
+                var_name.close()
+            </div>
+    
+            <h5>read () function</h5>
+            The read functions contains different methods, read(),readline() and readlines()
+            <div class="alert alert-primary" role="alert">
+                read() #return one big string
+            </div>
+            It returns a list of lines
+    
+            <div class="alert alert-primary" role="alert">
+                readlines() #returns a list
+            </div>
+            It returns one line at a time
+            
+            <div class="alert alert-primary" role="alert">
+                readline #returns one line at a time            </div>
+            
+
+           <h5> write function</h5>
+            This function writes a sequence of strings to the file.
+            <div class="alert alert-primary" role="alert">
+                write() #Used to write a fixed sequence of characters to a file
+                
+            </div>
+            It is used to write a list of strings
+            
+            <div class="alert alert-primary" role="alert">
+                writelines()
+            </div>
+                <br>
+    
+            
+
+            <!-- *********************************** Exception Handling ********************************************* -->
+            <h3 style="color:rgb(144, 12, 177) ;">Exception Handling</h3>
+            An exception is an unusual condition that results in an interruption in the flow of a program.
+                <br>
+            The try block lets you test a block of code for errors. <br>
+
+        The except block lets you handle the error. <br>
+
+        The else block lets you execute code when there is no error. <br>
+
+        The finally block lets you execute code, regardless of the result of the try- and except blocks. <br>
+
+
+            
+            <h4>try and except</h4>
+            A basic try-catch block in python. When the try block throws an error, the control goes to the except block.
+            <div class="alert alert-primary" role="alert">
+                try: <br>
+                &nbsp;&nbsp;  [Statement body block] <br>
+                &nbsp;&nbsp;  raise Exception() <br>
+                except Exceptionname: <br>
+                &nbsp;&nbsp;  [Error processing block] <br>
+                
+            </div>
+    
+            <h5>else</h5>
+            The else block is executed if the try block have not raise any exception and code had been running successfully
+            <div class="alert alert-primary" role="alert">
+                try: <br>
+                &nbsp;&nbsp;   #statements <br>
+                except: <br>
+                &nbsp;&nbsp;    #statements <br>
+                else: <br>
+                &nbsp;&nbsp;     #statements <br>
+            </div>
+    
+            
+
+            <!-- **************************************** finally **************************************** -->
+            <h4>finally</h4>
+            Finally block will be executed even if try block of code has been running successsfully or except block of code is been executed. <br>
+            finally block of code will be executed compulsory <br>
+        
+            <br>
+        <!-- ********************************************** oops ************************************************** -->
+
+        <h3 style="color:rgb(144, 12, 177) ;"> Object Oriented Programming (OOPS)</h3>
+             It is a programming approach that primarily focuses on using objects and classes. The objects can be any real-world entities.
+        
+             class
+             The syntax for writing a class in python
+             <div class="alert alert-primary" role="alert">
+                class class_name:
+                pass #statements
+             </div>
+     
+              
+             <h4>Creating an object</h4> 
+            Instantiating an object can be done as follows: <br>
+            <div class="alert alert-primary" role="alert">
+                <<object-name>object-name> = <<class-name>class-name>(<<arguments>arguments>)
+            </div>
+    
+               
+             <h4>self parameter</h4>
+            <p> The self parameter is the first parameter of any function present in the class. It can be of different name but this parameter is must while defining any function into class as it is used to access other data members of the class </p>
+        
+             <h4>class with a constructor</h4>
+            <p> Constructor is the special function of the class which is used to initialize the objects. The syntax for writing a class with the constructor in python
+                <br>
+             class Code:</p>
+     
+            <h5># Default constructor</h5>
+            
+                <div class="alert alert-primary" role="alert">
+                    def __init__(self): <br>
+                 self.name = "Code"
+                </div>
+        
+            <h5># A method for printing data members</h5>
+
+            <div class="alert alert-primary" role="alert">
+                def print_me(self): <br>
+                print(self.name)
+            </div>
+            
+        <h3 style="color: blue;">Inheritance in python</h3>
+       <p> By using inheritance, we can create a class which uses all the properties and behavior of another class. The new class is known as a derived class or child class, and the one whose properties are acquired is known as a base class or parent class.
+        <br>
+        It provides the re-usability of the code.</p>
+        <div class="alert alert-primary" role="alert">
+            class Base_class: <br>&nbsp;&nbsp;
+               pass <br>
+        class derived_class(Base_class):<br>&nbsp;&nbsp;
+                pass <br>
+        </div>
+       
+
+        <h4>Types of inheritance-</h4><br>
+       <b style="color:rgb(51, 49, 49)"> Single inheritance <br>
+        Multiple inheritance <br>
+        Multilevel inheritance <br>
+        Hierarchical inheritance <br>
+        </b>
+        <br>
+        <br>
+
+        <h4>filter function</h4>
+       <p> The filter function allows you to process an iterable and extract those items that satisfy a given condition</p>
+        <div class="alert alert-primary" role="alert">
+            filter(function, iterable)
+        </div>
+        
+       <h4> issubclass function</h4>
+       <p> Used to find whether a class is a subclass of a given class or not as follows</p>
+        <div class="alert alert-primary" role="alert">
+            issubclass(obj, classinfo)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # returns true if obj is a subclass of classinfo
+        </div>
+       
+        <h3>Iterators and Generators</h3>
+       <p> Here are some of the advanced topics of the Python programming language like iterators and generators</p>
+        
+        <h4>Iterator</h4>
+        <p> Used to create an iterator over an iterable</p>
+        <div class="alert alert-primary" role="alert">
+            iter_list = iter(['Harry', 'Aakash', 'Rohan']) <br>
+            print(next(iter_list)) <br>
+            print(next(iter_list)) <br>
+            print(next(iter_list)) <br>
+        </div>
+        
+        <h4>Generator</h4>
+      <p> Used to generate values on the fly</p> 
+        
+        <h5># A simple generator function</h5>
+        <div class="alert alert-primary" role="alert">
+            def my_gen(): <br>
+            n = 1 <br>
+            print('This is printed first') <br>
+            # Generator function contains yield statements <br>
+            yield n <br>
+            n += 1 <br>
+            print('This is printed second') <br>
+            yield n <br>
+            n += 1 <br>
+            print('This is printed at last') <br>
+            yield n <br>
+        </div>
+        
+        <h4>Decorators</h4>
+       <p>Decorators are used to modifying the behavior of a function or a class. They are usually called before the definition of a function you want to decorate.</p> 
+      <h5>property Decorator (getter) </h5> 
+        <div class="alert alert-primary" role="alert">
+            
+            @property <br>
+            def name(self): <br>&nbsp;&nbsp;
+                return self.__name <br>
+        </div>
+        
+
+       <h4> setter Decorator</h4>
+        It is used to set the property 'name' <br>
+        <div class="alert alert-primary" role="alert">
+            @name.setter <br>
+            def name(self, value): <br>&nbsp;&nbsp;
+                self.__name=value <br>
+            </div>
+        
+       <h4> deleter Decorator</h4>
+        It is used to delete the property 'name'
+        <div class="alert alert-primary" role="alert">
+            @name.deleter #property-name.deleter decorator <br>
+            def name(self, value): <br>&nbsp;&nbsp;
+                print('Deleting..') <br>&nbsp;&nbsp;
+                del self.__name <br>
+        </div>
+        
+         
+        
+        <div class="alert alert-success" role="alert">
+           <h5 style="font-family: 'Courier New', Courier, monospace; text-align: center;">Thank you</h5>
+        </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>

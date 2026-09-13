@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+
+<div class="box1">
+    <div class="form">
+        <form action="signup.php">
+        <h2>Sign up</h2>
+
+        <div class="nam" style="display: flex;">
+        <div class="inputBox">
+            <input type="text" required="required" name="firstname">
+            <span>First name</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="text" required="required" name="middlename">
+            <span>Middle name</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="text" required="required" name="lastname">
+            <span>Lastname</span>
+            <i></i>
+        </div>
+    </div>
+
+
+        <div class="inputBox">
+            <input type="email" required="required" name="email">
+            <span>Email</span>
+            <i></i>
+        </div>
+
+        <div class="inputBox">
+            <input type="tel" required="required" minlength="10" maxlength="12" regex="/^\d*$/" name="mobile">
+            <span>Mobile no.</span>
+            <i></i>
+        </div>
+
+        <div class="inputBox">
+            <input type="password" required="required" minlength="8" name="pass">
+            <span>Password</span>
+            <i></i>
+        </div>
+        <br> <br><br>
+        <input type="submit" value="sign in" name="create" >
+    </form>
+    </div>
+</div>
+</body>
+</html>
